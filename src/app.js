@@ -13,6 +13,8 @@ mongoose.connect('mongodb://kalebe:Aquariofilia1996@crud-shard-00-00-myzxy.gcp.m
 
 // Carrega os Models
 const Product = require('./models/product');
+const Customer = require('./models/customer');
+const Order = require('./models/order');
 
 // Carrega as Rotas
 const indexRoute = require('./routes/index-route');
