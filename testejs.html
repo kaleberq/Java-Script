@@ -5,10 +5,19 @@
     <meta charset="utf-8"/>
     <script>
         "use strict";
-        function soma(x,y) {
-            return x+y;
-        }
-        console.log("5+9=" + soma(5,9));
+        
+        var client = {
+            nome: 'Maria',
+            sobrenome: 'Marta',
+            idade: 127,
+            clienteAtual: false,
+            comeCompleto: function(){
+                return this.nome +" "+ this.sobrenome;
+            },
+            contatos: ['kalebemisael@gmail.com', '(34)992121812']
+        };
+        console.log(client.comeCompleto());
+        
     </script>
 </head>
 <body>
