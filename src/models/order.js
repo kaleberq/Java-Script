@@ -20,7 +20,7 @@ const schema = new Schema({
     status: { 
         type: String,
         require: true,
-        enun: ['created','done'],
+        enum: ['created','done'], /*olhe aqui*/
         default: 'created'
     },
     items: [{ 
